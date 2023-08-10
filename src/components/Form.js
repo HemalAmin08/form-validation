@@ -115,7 +115,9 @@ export default function Form() {
                 handleInputChange(e);
               }}
             />
-            {validateError.email && <Box>{validateError.email} </Box>}
+            {validateError.email && (
+              <Box sx={{ color: "red" }}>{validateError.email} </Box>
+            )}
             {/* {console.log(validateError)} */}
             <TextField
               margin="normal"
@@ -131,7 +133,9 @@ export default function Form() {
                 handleInputChange(e);
               }}
             />
-            {validateError.password && <Box>{validateError.password} </Box>}
+            {validateError.password && (
+              <Box sx={{ color: "red" }}>{validateError.password} </Box>
+            )}
             <Button
               type="submit"
               fullWidth
